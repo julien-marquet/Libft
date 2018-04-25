@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/07 18:33:23 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/04/24 16:56:35 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -75,6 +75,8 @@ int				ft_strequ(char const *s1, char const *s2);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s);
+size_t			ft_strcspn(const char *s, const char *reject);
+int				ft_strswapfree(char **buffer, char *str);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_itoa(int n);
 void			*ft_memalloc(size_t size);

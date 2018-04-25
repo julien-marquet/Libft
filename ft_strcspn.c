@@ -1,29 +1,36 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strdup.c                                      .::    .:/ .      .::   */
+/*   ft_strcspn.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2017/12/07 18:28:47 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/04/24 11:51:22 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/04/24 10:30:45 by jmarquet     #+#   ##    ##    #+#       */
+/*   Updated: 2018/04/24 11:56:48 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+size_t	ft_strcspn(const char *s, const char *reject)
 {
-	char	*new;
-	int		i;
+	size_t	si;
+	size_t	ri;
 
-	if (!(new = (char*)malloc(ft_strlen(s1) + 1)))
-		return (NULL);
-	i = -1;
-	while (s1[++i] != '\0')
-		new[i] = (char)s1[i];
-	new[i] = '\0';
-	return (new);
+	if (!s || !reject)
+		return (0);
+	si = 0;
+	while (s[si] != '\0')
+	{
+		ri = 0;
+		while (reject[ri] != '\0')
+		{
+			if (s[si] == reject[ri])
+				return (si);
+			ri++;
+		}
+		si++;
+	}
+	return (si);
 }
