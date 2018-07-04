@@ -17,9 +17,9 @@ SRCS = $(addprefix $(PATH_SRCS), ft_strswapfree.c ft_strcspn.c ft_strlen.c ft_is
 OBJ = $(SRCS:.c=.o)
 
 FLAGS = -Wall -Werror -Wextra
-CC=/usr/bin/cc
-AR=/usr/bin/ar
-RM=/bin/rm
+CC = $(shell whereis gcc)
+AR = $(shell whereis ar)
+RM = $(shell whereis rm)
 
 .PHONY: clean, fclean, all, re, test
 
