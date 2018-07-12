@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/05 03:53:28 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/07/12 21:06:00 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -95,5 +95,6 @@ void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int				ft_isprime(int x);
 void			*ft_memsub(void const *b, unsigned int start, size_t len);
+void			ft_strnfill(char **src, char filler, size_t len);
 
 #endif
