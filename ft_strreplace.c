@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strnfill.c                                    .::    .:/ .      .::   */
+/*   ft_strreplace.c                                  .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/07/12 21:02:39 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/23 16:27:47 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/07/23 19:00:38 by jmarquet     #+#   ##    ##    #+#       */
+/*   Updated: 2018/07/23 19:47:21 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strnfill(char **src, char filler, size_t len)
+void	ft_strreplace(char **str, char replaced, char new)
 {
-	size_t	i;
+	int		i;
 
+	if (!str || !*str)
+		return ;
 	i = 0;
-	if (src != NULL)
+	while ((*str)[i] != '\0')
 	{
-		while (i < len)
-			(*src)[i++] = filler;
+		if ((*str)[i] == replaced)
+			(*str)[i] = new;
+		i++;
 	}
 }
