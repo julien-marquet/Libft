@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/23 19:04:34 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/07/28 23:26:58 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -14,6 +14,8 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include <wchar.h>
+# include <stdlib.h>
 
 typedef	struct	s_list
 {
@@ -98,5 +100,7 @@ void			*ft_memsub(void const *b, unsigned int start, size_t len);
 void			ft_strnfill(char **src, char filler, size_t len);
 void			ft_strcutswap(char **str, size_t width);
 void			ft_strreplace(char **str, char replaced, char new);
+size_t			ft_getstrsize_intmax(intmax_t nbr);
+char			*ft_intmaxconvstr(intmax_t nbr, size_t *size);
 
 #endif
