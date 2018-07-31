@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/07/23 18:44:18 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/29 19:48:25 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/07/31 22:26:27 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -14,15 +14,16 @@
 #include "libft.h"
 #include <stdlib.h>
 
-void	ft_strcutswap(char **str, size_t width)
+int		ft_strcutswap(char **str, size_t width)
 {
 	char	*tmp;
 	size_t	i;
 	size_t	j;
 
 	if (!str || !*str)
-		return ;
-	tmp = ft_strdup(*str);
+		return 0;
+	if ((tmp = ft_strdup(*str)) == NULL)
+		return 0;
 	i = 0;
 	j = 0;
 	while (tmp[i + width])
@@ -36,4 +37,5 @@ void	ft_strcutswap(char **str, size_t width)
 		j++;
 	}
 	free(tmp);
+	return (1);
 }
