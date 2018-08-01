@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/01 19:38:35 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/08/01 22:02:31 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -104,7 +104,9 @@ size_t			ft_getstrsize_intmax(intmax_t nbr);
 char			*ft_intmaxconvstr(intmax_t nbr, size_t *size);
 size_t			ft_getstrsize_uintmax(uintmax_t nbr);
 char			*ft_uintmaxconvstr(uintmax_t nbr, size_t *size);
+size_t			ft_getstrsize_ouintmax(uintmax_t nbr);
+char			*ft_ouintmaxconvstr(uintmax_t nbr, size_t *size);
 void			*ft_mempreprend(const void *str, size_t str_size,
 				const void *pre, size_t pre_size);
-
+void			ft_printbinary(void	*buffer, size_t size);
 #endif
