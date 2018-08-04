@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/08/01 21:18:30 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/01 22:02:39 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/08/04 17:23:09 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -19,7 +19,7 @@ void	ft_printbinary(void *buffer, size_t size)
 	char		mask;
 	char		*cast;
 
-	mask = 128;
+	mask = (char)128;
 	cast = (char*)buffer;
 	i = size * 8 - 1;
 	while (i > 0)
