@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_mempreprend.c                                 .::    .:/ .      .::   */
+/*   ft_memprepend.c                                 .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
@@ -13,7 +13,7 @@
 
 #include "libft.h"
 
-void	*ft_mempreprend(const void *str, size_t str_size,
+void	*ft_memprepend(const void *str, size_t str_size,
 		const void *pre, size_t pre_size)
 {
 	char		*res;

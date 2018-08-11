@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/01 22:58:51 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/08/11 17:35:19 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -100,7 +100,7 @@ void			*ft_memsub(void const *b, unsigned int start, size_t len);
 void			ft_strnfill(char **src, char filler, size_t len);
 int				ft_strcutswap(char **str, size_t width);
 void			ft_strreplace(char **str, char replaced, char new);
-void			*ft_mempreprend(const void *str, size_t str_size,
+void			*ft_memprepend(const void *str, size_t str_size,
 				const void *pre, size_t pre_size);
 void			ft_printbinary(void	*buffer, size_t size);
 #endif
