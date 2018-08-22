@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/07/23 18:44:18 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/31 22:26:27 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/08/22 22:11:39 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -21,9 +21,9 @@ int		ft_strcutswap(char **str, size_t width)
 	size_t	j;
 
 	if (!str || !*str)
-		return 0;
+		return (0);
 	if ((tmp = ft_strdup(*str)) == NULL)
-		return 0;
+		return (0);
 	i = 0;
 	j = 0;
 	while (tmp[i + width])
