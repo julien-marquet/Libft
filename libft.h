@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/11 17:35:19 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/08/27 00:08:53 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -23,6 +23,13 @@ typedef	struct	s_list
 	size_t			content_size;
 	struct s_list	*next;
 }				t_list;
+typedef struct	s_bintree_node
+{
+	void					*content;
+	size_t					content_size;
+	struct s_bintree_node	*right;
+	struct s_bintree_node	*left;
+}				t_bintree_node;
 size_t			ft_strlen(const char *s);
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
@@ -103,4 +110,10 @@ void			ft_strreplace(char **str, char replaced, char new);
 void			*ft_memprepend(const void *str, size_t str_size,
 				const void *pre, size_t pre_size);
 void			ft_printbinary(void	*buffer, size_t size);
+t_bintree_node	*ft_bintree_new(void const *content, size_t content_size);
+int				ft_bintree_insert(t_bintree_node **root, t_bintree_node *node,
+				int (*sort)(void *, void *));
+int				ft_bintree_traversal(t_bintree_node *node, void (*fun)(void *));
+int				ft_bintree_free(t_bintree_node **root,
+				void (*destructor)(t_bintree_node *node));
 #endif
