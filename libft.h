@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/27 00:08:53 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/08/27 01:09:34 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -114,6 +114,7 @@ t_bintree_node	*ft_bintree_new(void const *content, size_t content_size);
 int				ft_bintree_insert(t_bintree_node **root, t_bintree_node *node,
 				int (*sort)(void *, void *));
 int				ft_bintree_traversal(t_bintree_node *node, void (*fun)(void *));
+int				ft_bintree_revtraversal(t_bintree_node *node, void (*fun)(void *));
 int				ft_bintree_free(t_bintree_node **root,
 				void (*destructor)(t_bintree_node *node));
 #endif
