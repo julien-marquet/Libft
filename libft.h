@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/27 01:09:34 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/08/28 00:43:34 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -110,11 +110,13 @@ void			ft_strreplace(char **str, char replaced, char new);
 void			*ft_memprepend(const void *str, size_t str_size,
 				const void *pre, size_t pre_size);
 void			ft_printbinary(void	*buffer, size_t size);
-t_bintree_node	*ft_bintree_new(void const *content, size_t content_size);
+t_bintree_node	*ft_bintree_new(void *content, size_t content_size);
 int				ft_bintree_insert(t_bintree_node **root, t_bintree_node *node,
-				int (*sort)(void *, void *));
-int				ft_bintree_traversal(t_bintree_node *node, void (*fun)(void *));
-int				ft_bintree_revtraversal(t_bintree_node *node, void (*fun)(void *));
+				void *params, int (*sort)(void *, void *, void *));
+int				ft_bintree_traversal(t_bintree_node *node,
+				void *params, void (*fun)(void *, void *));
+int				ft_bintree_revtraversal(t_bintree_node *node,
+				void *params, void (*fun)(void *, void *));
 int				ft_bintree_free(t_bintree_node **root,
 				void (*destructor)(t_bintree_node *node));
 #endif

@@ -6,15 +6,14 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/08/26 22:22:25 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/27 03:33:19 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/08/28 02:32:45 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-t_bintree_node	*ft_bintree_new(void const *content, size_t content_size)
+t_bintree_node	*ft_bintree_new(void *content, size_t content_size)
 {
 	t_bintree_node	*new;
 
@@ -27,9 +26,7 @@ t_bintree_node	*ft_bintree_new(void const *content, size_t content_size)
 	}
 	else
 	{
-		if (!(new->content = (void*)malloc(content_size)))
-			return (NULL);
-		ft_memcpy(new->content, content, content_size);
+		new->content = content;
 		new->content_size = content_size;
 	}
 	new->left = NULL;
