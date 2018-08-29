@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/28 00:43:34 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/08/29 20:45:17 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -109,7 +109,7 @@ int				ft_strcutswap(char **str, size_t width);
 void			ft_strreplace(char **str, char replaced, char new);
 void			*ft_memprepend(const void *str, size_t str_size,
 				const void *pre, size_t pre_size);
-void			ft_printbinary(void	*buffer, size_t size);
+int				ft_printbinary(void	*buffer, size_t size);
 t_bintree_node	*ft_bintree_new(void *content, size_t content_size);
 int				ft_bintree_insert(t_bintree_node **root, t_bintree_node *node,
 				void *params, int (*sort)(void *, void *, void *));
