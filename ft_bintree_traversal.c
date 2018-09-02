@@ -6,19 +6,31 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/08/26 23:30:37 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/29 18:02:23 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/02 01:15:40 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_bintree_traversal(t_bintree_node *node, void *params, void (*fun)(void *, void *))
+int		ft_bintree_traversal(t_bintree_node *node, void *params, int reverse,
+int (*fun)(void *, void *))
 {
 	if (node == NULL)
 		return (0);
-	ft_bintree_traversal(node->left, params, fun);
-	fun(node->content, params);
-	ft_bintree_traversal(node->right, params, fun);
+	if (reverse == 0)
+	{
+		ft_bintree_traversal(node->left, params, reverse, fun);
+		if (fun(node->content, params) == 0)
+			return (0);
+		ft_bintree_traversal(node->right, params, reverse, fun);
+	}
+	else
+	{
+		ft_bintree_traversal(node->right, params, reverse, fun);
+		if (fun(node->content, params) == 0)
+			return (0);
+		ft_bintree_traversal(node->left, params, reverse, fun);
+	}
 	return (1);
 }
