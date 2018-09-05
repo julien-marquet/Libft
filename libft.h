@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/02 00:53:08 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/05 14:49:43 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -117,4 +117,7 @@ int				ft_bintree_traversal(t_bintree_node *node, void *params,
 				int reverse, int (*fun)(void *, void *));
 int				ft_bintree_free(t_bintree_node **root,
 				void (*destructor)(t_bintree_node **node));
+size_t			ft_numlen_ll(long long num);
+size_t			ft_numlen_i(int num);
+size_t			ft_numlen_c(char num);
 #endif

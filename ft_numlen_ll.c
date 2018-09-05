@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_bintree_traversal.c                           .::    .:/ .      .::   */
+/*   ft_numlen_ll.c                                   .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2018/08/26 23:30:37 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/05 13:35:54 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/09/05 13:18:40 by jmarquet     #+#   ##    ##    #+#       */
+/*   Updated: 2018/09/05 13:24:56 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 
-int		ft_bintree_traversal(t_bintree_node *node, void *params, int reverse,
-int (*fun)(void *, void *))
+size_t	ft_numlen_ll(long long num)
 {
-	if (node == NULL)
-		return (0);
-	if (reverse == 0)
+	size_t	cpt;
+
+	cpt = 1;
+	if (num == LLONG_MIN)
+		return (20);
+	if (num < 0)
 	{
-		ft_bintree_traversal(node->left, params, reverse, fun);
-		if (fun(node->content, params) == 0)
-			return (0);
-		ft_bintree_traversal(node->right, params, reverse, fun);
+		cpt = 2;
+		num = -num;
 	}
-	else
+	while (num > 9)
 	{
-		ft_bintree_traversal(node->right, params, reverse, fun);
-		if (fun(node->content, params) == 0)
-			return (0);
-		ft_bintree_traversal(node->left, params, reverse, fun);
+		cpt++;
+		num /= 10;
 	}
-	return (1);
+	return (cpt);
 }
