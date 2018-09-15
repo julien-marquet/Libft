@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/15 17:43:45 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/15 17:48:25 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -44,10 +44,6 @@ typedef struct	s_arg_format
 	char	conversion_character;
 }				t_arg_format;
 
-/*
-**	Main Functions
-*/
-//int				ft_printf(const char *format, ...);
 /*
 **	Initializers
 */
