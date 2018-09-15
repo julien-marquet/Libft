@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/06/28 17:36:41 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/22 22:06:09 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/15 17:43:28 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -54,7 +54,7 @@ static char			*unstack_args(const char **format, t_utilities *utilities)
 	(*format)++;
 	if ((arg_format = parse_arg_format(format, utilities)) == NULL)
 	{
-		free_arg_format(&arg_format);
+		free_args(&arg_format);
 		return (NULL);
 	}
 	if (utilities->bad_conv != 0)
@@ -62,10 +62,10 @@ static char			*unstack_args(const char **format, t_utilities *utilities)
 		if ((res = format_c(utilities, arg_format,
 	utilities->bad_conv)) == NULL)
 		{
-			free_arg_format(&arg_format);
+			free_args(&arg_format);
 			return (NULL);
 		}
-		free_arg_format(&arg_format);
+		free_args(&arg_format);
 	}
 	else
 		res = dispatch_format(arg_format, utilities);

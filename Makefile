@@ -20,20 +20,23 @@ SRCS = $(addprefix $(PATH_SRCS), ft_numlen_c.c ft_numlen_i.c ft_numlen_ll.c ft_b
 PRINTF_SRCS = $(addprefix $(PATH_PRINTF), utils_2.c helpers_lst.c formatters_number.c formatters_string.c converters.c util_convstr.c util_getstrsize.c utils.c wide_char_helpers.c ft_printf.c freers.c initializers.c parsers.c helpers.c formatters_main.c width_handler.c flags_handler.c prec_handler.c)
 OBJ = $(SRCS:.c=.o)
 PRINTF_OBJ = $(PRINTF_SRCS:.c=.o)
-CC = gcc
+
 FLAGS = -Wall -Werror -Wextra
+CC = $(shell whereis gcc)
+AR = $(shell whereis ar)
+RM = $(shell whereis rm)
 
 .PHONY: clean, fclean, all, re, test
 
 all: $(NAME)
 
 $(NAME): $(OBJ) $(PRINTF_OBJ) $(HEADERS) $(PRINTF_HEADERS)
-	ar -rcs $(NAME) $(OBJ) $(PRINTF_OBJ)
+	$(AR) -rcs $(NAME) $(OBJ) $(PRINTF_OBJ)
 %.o:%.c
 	$(CC) $(FLAGS) -o $@ -c $< -I $(PATH_HEAD) -I $(PATH_PRINTF) 
 clean:
-	rm -f $(OBJ) $(PRINTF_OBJ)
+	$(RM) -f $(OBJ) $(PRINTF_OBJ)
 fclean: clean
-	rm -f $(NAME)
+	$(RM) -f $(NAME)
 re: fclean all
 	

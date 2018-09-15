@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/15 16:23:22 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/15 17:43:45 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -57,7 +57,7 @@ t_utilities		*init_utilities(void);
 **	Freers
 */
 void			free_utilities(t_utilities **utilities);
-void			free_arg_format(t_arg_format **arg_format);
+void			free_args(t_arg_format **arg_format);
 /*
 **	Parsers
 */

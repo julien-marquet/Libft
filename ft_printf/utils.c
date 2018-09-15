@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/07/31 22:07:32 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/22 20:28:22 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/15 17:43:40 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -99,10 +99,10 @@ ft_strchr("pdDioOuUxX", arg_format->conversion_character) != NULL)
 	else
 	{
 		utilities->content_size = 0;
-		free_arg_format(&arg_format);
+		free_args(&arg_format);
 		return (ft_strdup(""));
 	}
-	free_arg_format(&arg_format);
+	free_args(&arg_format);
 	return (res);
 }
 
