@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/15 17:25:39 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/19 16:13:38 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -121,4 +121,5 @@ size_t			ft_numlen_ll(long long num);
 size_t			ft_numlen_i(int num);
 size_t			ft_numlen_c(char num);
 int				ft_printf(const char *format, ...);
+char			*ft_getenv(const char *name, char **env);
 #endif
