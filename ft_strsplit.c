@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_strsplit.c                                    .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: jmarquet <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:51 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/07 18:28:51 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/25 17:26:19 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -98,7 +98,7 @@ char					**ft_strsplit(char const *s, char c)
 	while (++array_index < array_len)
 	{
 		if (!(array[array_index] = (char *)malloc(sizeof(char)
-			* ft_split_strlen(s, c))))
+			* (ft_split_strlen(s, c) + 1))))
 		{
 			ft_free_allocated(array, array_index);
 			return (NULL);
