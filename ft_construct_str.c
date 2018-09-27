@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/09/27 19:28:53 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/27 23:27:51 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/27 23:49:49 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -21,6 +21,7 @@ static size_t	get_size(size_t n, va_list ap)
 	va_list		apc;
 
 	i = 0;
+	len = 0;
 	va_copy(apc, ap);
 	while (i < n)
 	{
