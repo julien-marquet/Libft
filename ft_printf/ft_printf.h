@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/15 17:48:25 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/09/27 21:22:21 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,7 +15,6 @@
 # define FT_PRINTF_H
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdarg.h>
 # include <locale.h>
 # include <wchar.h>
 # include <stddef.h>
