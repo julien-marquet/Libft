@@ -1,22 +1,31 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_putchar.c                                     .::    .:/ .      .::   */
+/*   ft_realloc.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2017/12/07 18:28:43 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/06 22:15:06 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/10/08 21:18:24 by jmarquet     #+#   ##    ##    #+#       */
+/*   Updated: 2018/10/08 21:39:45 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-int		ft_putchar(int c)
+void	*ft_realloc(void *ptr, size_t old_size, size_t new_size)
 {
-	if (write(1, &c, 1) == 0)
-		return ('\0');
-	else
-		return (c);
+	void	*res;
+
+	if (ptr == NULL)
+		return (NULL);
+	if ((res = malloc(new_size)) == NULL)
+		return (NULL);
+	old_size = old_size >= new_size ? new_size : old_size;
+	res = ft_memcpy(res, ptr, old_size);
+	if (old_size != new_size)
+		ft_bzero(&(res[old_size]), new_size - old_size);
+	free(ptr);
+	ptr = res;
+	return (res);
 }

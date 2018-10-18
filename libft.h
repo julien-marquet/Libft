@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/27 21:22:31 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/08 22:46:05 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -71,7 +71,7 @@ char			*ft_strnstr(const char *haystack, const char *needle,
 int				ft_atoi(const char *str);
 double			ft_atof(const char *str);
 double			ft_pow(double x, double y);
-void			ft_putchar(char c);
+int				ft_putchar(int c);
 void			ft_putstr(char const *s);
 void			ft_putendl(char const *s);
 char			*ft_strnew(size_t size);
@@ -124,4 +124,5 @@ size_t			ft_numlen_c(char num);
 int				ft_printf(const char *format, ...);
 char			*ft_getenv(const char *name, char **env);
 char			*ft_construct_str(size_t n, ...);
+void			*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 #endif
