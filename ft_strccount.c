@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_memcmp.c                                      .::    .:/ .      .::   */
+/*   ft_strccount.c                                   .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2017/12/07 18:28:41 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2019/02/08 23:06:26 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/02/08 21:52:59 by jmarquet     #+#   ##    ##    #+#       */
+/*   Updated: 2019/02/08 23:08:52 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <unistd.h>
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int		ft_strccount(const char *s, const char c)
 {
-	size_t			i;
-	unsigned char	*cs1;
-	unsigned char	*cs2;
+	size_t		i;
+	int			cpt;
 
 	i = 0;
-	cs1 = (unsigned char *)s1;
-	cs2 = (unsigned char *)s2;
-	while (i < n)
+	cpt = 0;
+	while (s[i] != '\0')
 	{
-		if (cs1[i] != cs2[i])
-			return ((int)(cs1[i] - cs2[i]));
+		if (s[i] == c)
+			cpt++;
 		i++;
 	}
-	return (0);
+	return (cpt);
 }

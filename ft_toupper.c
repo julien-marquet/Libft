@@ -3,15 +3,13 @@
 /*                                                              /             */
 /*   ft_toupper.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: jmarquet <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:53 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/07 18:28:53 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:13:17 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_toupper(int c)
 {

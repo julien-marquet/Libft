@@ -3,16 +3,15 @@
 /*                                                              /             */
 /*   ft_strmap.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: jmarquet <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:48 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/07 18:28:48 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:10:39 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {

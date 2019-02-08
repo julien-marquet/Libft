@@ -3,15 +3,15 @@
 /*                                                              /             */
 /*   ft_memccpy.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: jmarquet <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:40 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/07 18:28:40 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:06:04 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

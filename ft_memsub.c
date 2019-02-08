@@ -6,13 +6,12 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:52 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/07/05 03:47:51 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:07:14 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
 
 void	*ft_memsub(void const *b, unsigned int start, size_t len)
 {

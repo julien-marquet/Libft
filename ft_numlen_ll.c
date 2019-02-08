@@ -6,12 +6,12 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/09/05 13:18:40 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/11 16:49:31 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:07:42 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 #include <limits.h>
 
 size_t	ft_numlen_ll(long long num)

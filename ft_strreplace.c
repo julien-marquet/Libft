@@ -6,12 +6,10 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/07/23 19:00:38 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/08 22:46:02 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:12:34 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_strreplace(char **str, char replaced, char new)
 {

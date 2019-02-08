@@ -6,12 +6,11 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:48 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/04/24 13:27:05 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:10:07 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

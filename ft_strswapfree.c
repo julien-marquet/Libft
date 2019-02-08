@@ -6,12 +6,11 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/04/24 11:04:17 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/09/20 15:05:51 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:12:58 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdlib.h>
 
 int		ft_strswapfree(char **buffer, char *str)

@@ -6,12 +6,10 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:42 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/07 18:32:36 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:07:50 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 double			ft_pow(double x, double y)
 {

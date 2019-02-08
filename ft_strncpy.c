@@ -3,15 +3,15 @@
 /*                                                              /             */
 /*   ft_strncpy.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: jmarquet <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:50 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/07 18:28:50 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:11:20 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strncpy(char *dst, const char *src, size_t n)
 {

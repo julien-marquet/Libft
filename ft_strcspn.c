@@ -6,12 +6,12 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/04/24 10:30:45 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/04/24 11:56:48 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:09:27 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 size_t	ft_strcspn(const char *s, const char *reject)
 {

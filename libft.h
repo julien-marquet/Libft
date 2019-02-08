@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/08 22:46:05 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:15:42 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -125,4 +125,7 @@ int				ft_printf(const char *format, ...);
 char			*ft_getenv(const char *name, char **env);
 char			*ft_construct_str(size_t n, ...);
 void			*ft_realloc(void *ptr, size_t old_size, size_t new_size);
+int				ft_strccount(const char *s, const char c);
+int				ft_strcncount(const char *s, const char c, size_t n);
+
 #endif

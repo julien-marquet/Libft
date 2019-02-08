@@ -6,12 +6,11 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:47 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2018/04/24 11:51:22 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/08 23:09:44 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)
