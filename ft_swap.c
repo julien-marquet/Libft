@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:52 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2019/02/11 14:02:11 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/11 14:09:15 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -17,7 +17,7 @@ void	ft_swap(void **a, void **b)
 {
 	char	*tmp;
 
-	tmp = (char *)*a;
+	tmp = (char *)*b;
 	*b = *a;
 	*a = tmp;
 }
