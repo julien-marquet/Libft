@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2019/02/11 14:02:35 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/12 11:12:02 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -128,5 +128,6 @@ void			*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 int				ft_strccount(const char *s, const char c);
 int				ft_strcncount(const char *s, const char c, size_t n);
 void			ft_swap(void **a, void **b);
+t_list			*ft_lstprepend(t_list **alst, t_list *elem);
 
 #endif
