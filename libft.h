@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2019/02/12 11:12:02 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/02/13 12:13:15 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -129,5 +129,6 @@ int				ft_strccount(const char *s, const char c);
 int				ft_strcncount(const char *s, const char c, size_t n);
 void			ft_swap(void **a, void **b);
 t_list			*ft_lstprepend(t_list **alst, t_list *elem);
+t_list			*ft_lstdup(t_list *lst);
 
 #endif
