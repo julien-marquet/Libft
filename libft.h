@@ -132,5 +132,6 @@ void			ft_swap(void **a, void **b);
 t_list			*ft_lstprepend(t_list **alst, t_list *elem);
 t_list			*ft_lstdup(t_list *lst);
 int				ft_arraylen(const void **array);
+void			ft_freetab(char ***array);
 
 #endif

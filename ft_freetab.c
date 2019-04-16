@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_lstdel.c                                      .::    .:/ .      .::   */
+/*   ft_freetab.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
+/*   By: legrivel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2017/12/07 18:28:39 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2019/04/02 21:44:15 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Created: 2018/01/28 19:50:14 by legrivel     #+#   ##    ##    #+#       */
+/*   Updated: 2018/02/22 03:41:11 by legrivel    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+void	ft_freetab(char ***tab)
 {
-	t_list	*to_free;
+	char	**tab_pointer;
 
-	if (alst)
+	if (*tab == NULL)
+		return ;
+	tab_pointer = *tab;
+	while (**tab != NULL)
 	{
-		while ((*alst))
-		{
-			if ((*alst)->content)
-				del((*alst)->content, (*alst)->content_size);
-			to_free = *alst;
-			*alst = (*alst)->next;
-			free(to_free);
-		}
+		ft_strdel(*tab);
+		*tab += 1;
 	}
+	free(tab_pointer);
+	*tab = NULL;
 }
