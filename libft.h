@@ -6,7 +6,7 @@
 /*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/09 15:44:12 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2019/04/16 19:17:08 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/04/26 00:25:12 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -134,5 +134,6 @@ t_list			*ft_lstdup(t_list *lst);
 int				ft_arraylen(const void **array);
 void			ft_freetab(char ***array);
 t_list			*ft_lstappend(t_list **alst, t_list *elem);
+int				ft_abs(int value);
 
 #endif
