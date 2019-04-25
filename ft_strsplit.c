@@ -108,7 +108,7 @@ char			**ft_strsplit(char const *s, char c)
 	char	**tab;
 
 	tab = NULL;
-	if (get_tab_length(s, c) == 1)
+	if (get_tab_length(s, c) == 0 || get_tab_length(s, c) == 1)
 		return (manage_short_tab(tab, s, c));
 	if (s == NULL || (tab = malloc(sizeof(char *) * (get_tab_length(s, c) + 1)\
 )) == NULL || (allocate_tab(s, c, tab) == NULL))
