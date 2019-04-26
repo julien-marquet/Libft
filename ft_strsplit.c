@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_strsplit.c                                    .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: legrivel <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/26 01:54:21 by legrivel     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/26 01:54:21 by legrivel    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/04/26 02:49:55 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -108,9 +108,9 @@ char			**ft_strsplit(char const *s, char c)
 	char	**tab;
 
 	tab = NULL;
-	if (get_tab_length(s, c) == 1)
+	if (get_tab_length(s, c) <= 1)
 		return (manage_short_tab(tab, s, c));
-	if (s == NULL || (tab = malloc(sizeof(char *) * (get_tab_length(s, c) + 1)\
+	if (s == NULL || (tab = malloc(sizeof(char *) * (get_tab_length(s, c) + 1)
 )) == NULL || (allocate_tab(s, c, tab) == NULL))
 		return (NULL);
 	i = 0;
