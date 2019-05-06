@@ -3,20 +3,21 @@
 /*                                                              /             */
 /*   ft_atoi.c                                        .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: jmarquet <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: jmarquet <jmarquet@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/12/07 18:28:35 by jmarquet     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/07 18:28:35 by jmarquet    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/05/06 19:44:32 by jmarquet    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "limits.h"
 
 int		ft_atoi(const char *str)
 {
 	int			i;
-	int			res;
+	long		res;
 	int			is_negative;
 
 	i = 0;
@@ -34,6 +35,8 @@ int		ft_atoi(const char *str)
 	{
 		res *= 10;
 		res += str[i++] - 48;
+		if (res > INT_MAX + is_negative)
+			return (-1);
 	}
-	return (is_negative == 1 ? -res : res);
+	return (is_negative == 1 ? (int)(-res) : (int)(res));
 }
